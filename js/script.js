@@ -10,27 +10,23 @@ for (let i=1; i <= limit; i++){
   boxRl.className = 'box';
   container.append(boxRl);
   
-
   if(!(i % dividFizz) && (i % dividBuzz)){
     boxRl.classList.add("box-fizz");
-
-    let fizzBuzzDom = ("fizz");
+    let fizzBuzzDom = "fizz";
     boxRl.append(fizzBuzzDom)
 
   }else if(!(i % dividBuzz) && (i % dividFizzBuzz)){
     boxRl.classList.add("box-buzz");
-    
-    let fizzBuzzDom = ("buzz");
-    boxRl.append(fizzBuzzDom);
+    let fizzBuzzDom = "buzz";
+    boxRl.append(fizzBuzzDom)
 
 
   }else if(!(i % dividFizzBuzz)){
     boxRl.classList.add("box-fizz-buzz");
+    let fizzBuzzDom = "fizzbuzz";
+    boxRl.append(fizzBuzzDom)
 
-    let fizzBuzzDom = ("fizzbuzz");
-    boxRl.append(fizzBuzzDom);
   }else{
-    boxRl.append(i);
+    boxRl.append(i)
   }
-  
 }
